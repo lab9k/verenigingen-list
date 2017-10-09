@@ -10,7 +10,7 @@ Dit project is een subversie van https://github.com/lab9k/Verenigingen en heeft 
 - project werkt in iedere browser zonder bijkomende plugin te installeren
  
 # Live demo
-Men kan het project bekijken op volgende link:
+Het project is te bekijken op volgende link:
 https://lab9k.github.io/verenigingen-list
 
 

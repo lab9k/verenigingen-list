@@ -11,6 +11,6 @@ Dit project is een subversie van https://github.com/lab9k/Verenigingen en heeft 
  
 # Live demo
 Men kan het project bekijken op volgende link:
-lab9k.github.io/verenigingen-list/
+https://lab9k.github.io/verenigingen-list
 
 

@@ -1,0 +1,111 @@
+#lijst {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    .min-height {
+        min-height: calc(100vh - 439px);
+        position: relative;
+    }
+    .search-wrapper {
+        margin-bottom: 30px;
+        input {
+            width: calc(100% - 20px);
+            height: 40px;
+            padding: 5px 10px;
+            border: none;
+            outline: none;
+
+            box-shadow: $shadow;
+        }
+    }
+    .list-wrapper {
+        text-align: left;
+        margin-top: 16px;
+        .list_item {
+            position: relative;
+            background: $white;
+            box-shadow: $shadow;
+            height: 46px;
+            padding: 8px 10px;
+            overflow: hidden;
+            &.open {
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                height: initial;
+                .ondernemingsnummer {
+                    position: absolute;
+                    top: -12px;                    
+                    font-size: 12px;
+                    background: #fff;
+                    padding: 0 10px;
+                    right: 8px;
+                    display: initial;
+                }
+                &.editing {
+                    .edit {
+                      display: block;
+                    }
+                    .view {
+                      display: none;
+                    }
+                }
+                .edit {
+                  display: none;
+                }
+                .view {
+                  display: block;
+                }
+            }
+            .border-left {
+                width: 3px;
+                height: 100%;
+                background: linear-gradient(-45deg,#009ee3, #63c6c8);
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .name span {
+                font-weight: 500;
+            }
+            .name {
+                line-height: 1em;                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .description {                
+                position: relative;
+                border: 1px solid #eee;
+                padding: 20px;
+            }
+            .ondernemingsnummer {
+                display: none;
+            }
+            .status {                
+                position: absolute;
+                right: 8px;
+                top: 16px;
+                img {
+                    height: auto;
+                    width: 28px;
+                }
+            }
+            .lastchanged {
+                font-size: 12px;
+                color: $gray-light;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .lastchanged {
+        position: relative;
+    }
+}
+@media screen and (min-width: 768px) {
+    .lastchanged {
+        position: absolute;
+        bottom: 0;
+        right: 8px;
+    }
+}

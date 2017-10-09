@@ -1,0 +1,22 @@
+.zoeken {
+    position: relative;
+    height: 75vh;   
+    background: $primary;
+    margin-top: -6px;    
+    background: url('../assets/img/Gent_Graslei_zonsondergang.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    form.zoek-vereniging {
+        color: $gray-lightest;
+        padding-top: 20vh;
+        h2 {
+            margin-top: 0;
+            padding-top: 1em;
+        }
+        button {            
+            color: white;
+            background: #2c3e50;
+        }
+    }
+}

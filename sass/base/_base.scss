@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700');
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $text;
+    background-color: $white;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+h1 {
+    color: $primary;
+    font-size: 2.5em;
+}
+
+img {
+    &.triangle {
+        position: absolute;
+        width: 103vw;
+        bottom: -1px;
+        left: -1vw;
+        transform: rotate(180deg);
+    }
+}
+
+a {
+    color: $sub;
+    text-decoration: none;
+}
+
+input {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.content {
+    width: calc(100% - 16px);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8px;
+}
